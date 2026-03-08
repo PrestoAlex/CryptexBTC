@@ -1,0 +1,92 @@
+{
+    "functions": [
+        {
+            "name": "createVault",
+            "type": "Function",
+            "payable": false,
+            "onlyOwner": false,
+            "inputs": [
+                {
+                    "name": "dataHash",
+                    "type": "UINT256"
+                },
+                {
+                    "name": "unlockBlock",
+                    "type": "UINT256"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "success",
+                    "type": "BOOL"
+                }
+            ]
+        },
+        {
+            "name": "unlockAfterTime",
+            "type": "Function",
+            "payable": false,
+            "onlyOwner": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "success",
+                    "type": "BOOL"
+                }
+            ]
+        },
+        {
+            "name": "getDataHash",
+            "type": "Function",
+            "payable": false,
+            "onlyOwner": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "dataHash",
+                    "type": "UINT256"
+                }
+            ]
+        },
+        {
+            "name": "getUnlockBlock",
+            "type": "Function",
+            "payable": false,
+            "onlyOwner": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "unlockBlock",
+                    "type": "UINT256"
+                }
+            ]
+        },
+        {
+            "name": "getIsActive",
+            "type": "Function",
+            "payable": false,
+            "onlyOwner": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "isActive",
+                    "type": "BOOL"
+                }
+            ]
+        },
+        {
+            "name": "getVaultCount",
+            "type": "Function",
+            "payable": false,
+            "onlyOwner": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "count",
+                    "type": "UINT256"
+                }
+            ]
+        }
+    ],
+    "events": []
+}

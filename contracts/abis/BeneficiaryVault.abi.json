@@ -1,0 +1,92 @@
+{
+    "functions": [
+        {
+            "name": "createVault",
+            "type": "Function",
+            "payable": false,
+            "onlyOwner": false,
+            "inputs": [
+                {
+                    "name": "dataHash",
+                    "type": "UINT256"
+                },
+                {
+                    "name": "beneficiary",
+                    "type": "ADDRESS"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "success",
+                    "type": "BOOL"
+                }
+            ]
+        },
+        {
+            "name": "unlockByBeneficiary",
+            "type": "Function",
+            "payable": false,
+            "onlyOwner": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "success",
+                    "type": "BOOL"
+                }
+            ]
+        },
+        {
+            "name": "getDataHash",
+            "type": "Function",
+            "payable": false,
+            "onlyOwner": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "dataHash",
+                    "type": "UINT256"
+                }
+            ]
+        },
+        {
+            "name": "getBeneficiary",
+            "type": "Function",
+            "payable": false,
+            "onlyOwner": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "beneficiary",
+                    "type": "ADDRESS"
+                }
+            ]
+        },
+        {
+            "name": "getIsActive",
+            "type": "Function",
+            "payable": false,
+            "onlyOwner": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "isActive",
+                    "type": "BOOL"
+                }
+            ]
+        },
+        {
+            "name": "getVaultCount",
+            "type": "Function",
+            "payable": false,
+            "onlyOwner": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "count",
+                    "type": "UINT256"
+                }
+            ]
+        }
+    ],
+    "events": []
+}

@@ -1,0 +1,36 @@
+{
+  "name": "cryptexbtc-contracts",
+  "version": "1.0.0",
+  "description": "CryptexBTC — Bitcoin L1 Encrypted Data Vault (OP_NET)",
+  "type": "module",
+  "scripts": {
+    "build:datavault": "asc src/datavault/index.ts --target release --config asconfig-datavault.json",
+    "build:timevault": "asc src/timevault/index.ts --target release --config asconfig-timevault.json",
+    "build:beneficiaryvault": "asc src/beneficiaryvault/index.ts --target release --config asconfig-beneficiaryvault.json",
+    "build:deadmanvault": "asc src/deadmanvault/index.ts --target release --config asconfig-deadmanvault.json",
+    "build:vaultfactory": "asc src/vaultfactory/index.ts --target release --config asconfig-vaultfactory.json",
+    "build:accessaudit": "asc src/accessaudit/index.ts --target release --config asconfig-accessaudit.json",
+    "build:all": "npm run build:datavault && npm run build:timevault && npm run build:beneficiaryvault && npm run build:deadmanvault && npm run build:vaultfactory && npm run build:accessaudit",
+    "deploy:ts": "tsx deploy.ts",
+    "deploy:datavault": "set WASM_PATH=./build/DataVault.wasm&& npm run deploy:ts",
+    "deploy:timevault": "set WASM_PATH=./build/TimeVault.wasm&& npm run deploy:ts",
+    "deploy:beneficiaryvault": "set WASM_PATH=./build/BeneficiaryVault.wasm&& npm run deploy:ts",
+    "deploy:deadmanvault": "set WASM_PATH=./build/DeadManVault.wasm&& npm run deploy:ts",
+    "deploy:vaultfactory": "set WASM_PATH=./build/VaultFactory.wasm&& npm run deploy:ts",
+    "deploy:accessaudit": "set WASM_PATH=./build/AccessAudit.wasm&& npm run deploy:ts"
+  },
+  "dependencies": {
+    "@assemblyscript/loader": "^0.28.9",
+    "@btc-vision/as-bignum": "^0.1.2",
+    "@btc-vision/assemblyscript": "^0.29.2",
+    "@btc-vision/bitcoin": "^7.0.0-rc.6",
+    "@btc-vision/btc-runtime": "^1.11.0-rc.10",
+    "@btc-vision/opnet-transform": "^1.2.0",
+    "@btc-vision/transaction": "^1.8.0-rc.10",
+    "dotenv": "^17.3.1",
+    "opnet": "^1.8.1-rc.17"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0"
+  }
+}
