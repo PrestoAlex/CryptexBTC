@@ -1,0 +1,31 @@
+{
+  "name": "cryptexbtc",
+  "version": "1.0.0",
+  "description": "Bitcoin L1 Encrypted Data Vault with Silver Pearl Theme",
+  "author": "PrestoAlex",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "preview": "cd frontend && npm run preview",
+    "install": "cd frontend && npm install"
+  },
+  "keywords": [
+    "bitcoin",
+    "blockchain",
+    "decentralized",
+    "encryption",
+    "vault",
+    "opnet",
+    "web3",
+    "cryptocurrency"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PrestoAlex/CryptexBTC.git"
+  },
+  "homepage": "https://cryptexbtc.vercel.app",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
