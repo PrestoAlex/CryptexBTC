@@ -213,7 +213,8 @@ export class OPNetService {
     if (!this.wallet) throw new Error('Wallet not connected');
 
     try {
-      const result = await this.provider.call(contractAddress, method, calldata);
+      // For now, use simple call without calldata
+      const result = await this.provider.call(contractAddress, method);
 
       return result;
     } catch (error) {
